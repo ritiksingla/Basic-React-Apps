@@ -1,0 +1,9 @@
+.calculator {
+    width: 400px;
+    height: 600px;
+    margin-left: 30%;
+}
+
+.row {
+    display: flex;
+}

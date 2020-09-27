@@ -1,0 +1,13 @@
+.del {
+    display: flex;
+    flex: 1;
+    height: 4em;
+    outline: 1px solid gray;
+    justify-content: center;
+    color: white;
+    background-color: #000;
+    font-size: 1.4em;
+    align-items: center;
+    font-weight: lighter;
+    cursor: pointer;
+}

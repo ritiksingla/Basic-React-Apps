@@ -1,0 +1,20 @@
+.navbar {
+    height: 63px;
+    background-color: #3b5998;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    float: left;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.navbar ul {
+    padding: 8px 0 0 0;
+    list-style: none;
+}

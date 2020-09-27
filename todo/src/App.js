@@ -3,8 +3,9 @@ import './App.css';
 import Todos from './components/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import About from './components/pages/About';
+import Home from './components/pages/Home';
 
 class App extends Component {
   state = {
@@ -57,10 +58,9 @@ class App extends Component {
         <div className='App'>
           <div className='container'>
             <Header />
-            <Route
-              exact
-              path='/'
-              render={(props) => (
+            <Switch>
+              <Route path='/about' component={About} />
+              <Route path='/'>
                 <React.Fragment>
                   <AddTodo addTodo={this.addTodo} />
                   <Todos
@@ -69,9 +69,8 @@ class App extends Component {
                     delTodo={this.delTodo}
                   />
                 </React.Fragment>
-              )}
-            />
-            <Route path='/about' component={About} />
+              </Route>
+            </Switch>
           </div>
         </div>
       </BrowserRouter>

@@ -17,7 +17,7 @@ export class AddTodo extends Component {
   render() {
     return (
       <form onSubmit={this.onSubmit}>
-        <Grid container md={12} spacing={10}>
+        <Grid container md={12} spacing={9}>
           <Grid item md={0}></Grid>
           <Grid item md={10}>
             <TextField
